@@ -14,7 +14,8 @@ interface AllowConnectionForDeviceAlertProps {
 export default function AllowConnectionForDeviceAlert(
   props: AllowConnectionForDeviceAlertProps
 ) {
-  const { t } = useTranslation();
+    const { t } = {t(s){return s}}
+
   const { device, isOpen, onCancel, onConfirm } = props;
   const denyText = t('Deny');
   const allowText = t('Allow');

@@ -47,7 +47,7 @@ interface ChooseAppOrScreenOverlayProps {
 export default function ChooseAppOrScreenOverlay(
   props: ChooseAppOrScreenOverlayProps
 ) {
-  const { t } = useTranslation();
+  const { t } = {t(s){return s}}
 
   const {
     handleClose,

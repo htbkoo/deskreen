@@ -56,7 +56,8 @@ const useStyles = makeStyles(() =>
 export default function ConnectedDevicesListDrawer(
   props: ConnectedDevicesListDrawerProps
 ) {
-  const { t } = useTranslation();
+    const { t } = {t(s){return s}}
+
   const classes = useStyles();
 
   const [isAlertDisconectAllOpen, setIsAlertDisconectAllOpen] = useState(false);

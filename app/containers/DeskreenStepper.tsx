@@ -62,7 +62,8 @@ function getSteps(t: TFunction) {
 
 // eslint-disable-next-line react/display-name
 const DeskreenStepper = React.forwardRef((_props, ref) => {
-  const { t } = useTranslation();
+    const { t } = {t(s){return s}}
+
 
   const classes = useStyles();
 

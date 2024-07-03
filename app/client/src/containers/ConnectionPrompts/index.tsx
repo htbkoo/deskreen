@@ -58,7 +58,8 @@ function ConnectionPropmpts(props: ConnectionPropmptsProps) {
     isOpen,
   } = props;
 
-  const { t } = useTranslation();
+    const { t } = {t(s){return s}}
+
   const { isDarkTheme } = useContext(AppContext);
 
   return (

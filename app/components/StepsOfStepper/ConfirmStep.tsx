@@ -12,7 +12,7 @@ interface ConfirmStepProps {
 }
 
 export default function ConfirmStep(props: ConfirmStepProps) {
-  const { t } = useTranslation();
+  const { t } = {t(s){return s}}
   const { device } = props;
   const [
     waitingForConnectionSharingSessionSourceId,

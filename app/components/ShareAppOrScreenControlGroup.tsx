@@ -54,7 +54,8 @@ const useStyles = makeStyles(() =>
 export default function ShareAppOrScreenControlGroup(
   props: ShareAppOrScreenControlGroupProps
 ) {
-  const { t } = useTranslation();
+    const { t } = {t(s){return s}}
+
   const { handleNextEntireScreen, handleNextApplicationWindow } = props;
   const classes = useStyles();
 

@@ -53,7 +53,8 @@ const useStylesWithTheme = (isDarkTheme: boolean) =>
   );
 
 export default function TopPanel(props: any) {
-  const { t } = useTranslation();
+  const t = (s) => s;
+
   const { isDarkTheme } = useContext(SettingsContext);
 
   const getClassesCallback = useCallback(() => {

@@ -53,7 +53,8 @@ interface PlayerControlPanelProps {
 const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
 function PlayerControlPanel(props: PlayerControlPanelProps) {
-  const { t } = useTranslation();
+    const { t } = {t(s){return s}}
+
   const {
     isPlaying,
     onSwitchChangedCallback,

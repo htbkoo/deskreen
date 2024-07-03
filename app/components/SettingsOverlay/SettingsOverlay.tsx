@@ -55,7 +55,7 @@ const useStylesWithTheme = (isDarkTheme: boolean) =>
   );
 
 export default function SettingsOverlay(props: SettingsOverlayProps) {
-  const { t } = useTranslation();
+  const { t } = {t(s){return s}}
 
   const { handleClose, isSettingsOpen } = props;
 

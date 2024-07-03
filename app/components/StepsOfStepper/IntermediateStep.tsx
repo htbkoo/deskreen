@@ -59,7 +59,7 @@ function isConfirmStep(activeStep: number, steps: string[]) {
 }
 
 export default function IntermediateStep(props: IntermediateStepProps) {
-  const { t } = useTranslation();
+  const { t } = {t(s){return s}}
 
   const {
     activeStep,

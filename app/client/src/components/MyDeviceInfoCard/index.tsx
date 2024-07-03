@@ -12,7 +12,8 @@ interface MyDeviceDetailsCardProps {
 }
 
 function MyDeviceInfoCard(props: MyDeviceDetailsCardProps) {
-  const { t } = useTranslation();
+    const { t } = {t(s){return s}}
+
   const { isDarkTheme } = useContext(AppContext);
 
   const { deviceDetails } = props;

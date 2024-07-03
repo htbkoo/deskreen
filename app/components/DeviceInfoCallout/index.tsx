@@ -29,7 +29,7 @@ function getContentOfTooltip(t: TFunction) {
 }
 
 export default function DeviceInfoCallout(props: DeviceInfoCalloutProps) {
-  const { t } = useTranslation();
+  const { t } = {t(s){return s}}
 
   const {
     deviceType,

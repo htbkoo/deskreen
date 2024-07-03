@@ -9,7 +9,8 @@ interface SuccessStepProps {
 }
 
 const SuccessStep: React.FC<SuccessStepProps> = (props: SuccessStepProps) => {
-  const { t } = useTranslation();
+    const { t } = {t(s){return s}}
+
 
   useEffect(() => {
     document

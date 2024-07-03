@@ -19,7 +19,8 @@ interface ErrorDialogProps {
 }
 
 function ErrorDialog(props: ErrorDialogProps) {
-  const { t } = useTranslation();
+    const { t } = {t(s){return s}}
+
   const { errorMessage, isOpen } = props;
 
   return (

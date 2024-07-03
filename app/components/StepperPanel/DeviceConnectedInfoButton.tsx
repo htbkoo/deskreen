@@ -52,7 +52,7 @@ const getDeviceConnectedPopoverContent = (
 export default function DeviceConnectedInfoButton(
   props: DeviceConnectedInfoButtonProps
 ) {
-  const { t } = useTranslation();
+  const { t } = {t(s){return s}}
 
   const { device, onDisconnect } = props;
 

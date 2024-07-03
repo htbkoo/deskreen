@@ -51,7 +51,7 @@ const useStyles = makeStyles(() =>
 );
 
 const ScanQRStep: React.FC = () => {
-  const { t } = useTranslation();
+  const { t } = {t(s){return s}}
   const classes = useStyles();
   const { isDarkTheme } = useContext(SettingsContext);
 
